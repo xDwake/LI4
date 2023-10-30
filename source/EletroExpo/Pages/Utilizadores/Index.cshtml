@@ -1,0 +1,37 @@
+﻿@page
+@model EletroExpo.Pages.Utilizadores.IndexModel
+@{
+}
+
+<br>
+<h2>Utilizadores do Sistema</h2>
+<a class='btn btn-primary btn-sm' href='/Utilizadores/Create'>Novo Utilizador</a>
+<a class='btn btn-primary btn-sm' href='/Shared/Formulario'>Quer Ser Vendedor?</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID de Utilizador: </th>
+            <th>Username: </th>
+            <th>Email: </th>
+            <th>Password: </th>
+            <th>É Vendedor?</th>
+            <th>Está Ativo?</th>
+            <th>É Administrador?</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model.listUtilizadores)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.username</td>
+                <td>@item.email</td>
+                <td>@item.password</td>
+                <td>@item.isVendedor</td>
+                <td>@item.isAtivo</td>
+                <td>@item.isAdministrador</td>
+            </tr>
+        }
+    </tbody>
+</table>

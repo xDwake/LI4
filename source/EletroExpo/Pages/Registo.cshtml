@@ -1,0 +1,28 @@
+﻿@page
+@model EletroExpo.Pages.RegistoModel
+@{
+}
+
+<h3>Registar Utilizador</h3>
+
+<a class='btn btn-primary btn-sm' href='/Shared/Formulario'>Quer Ser Vendedor?</a>
+
+@if (Model.hasData)
+{
+    <p>Novo Utilizador Registado!</p>
+}
+
+<div class="container">
+    <form method="POST">
+        <label for="username">Insira o Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+
+        <label for="email">Insira o Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+
+        <label for="password">Insira a Password:</label><br>
+        <input type="text" id="password" name="password"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>

@@ -1,0 +1,35 @@
+﻿@page
+@model EletroExpo.Pages.Shared.FormularioModel
+@{
+}
+
+<h3>Preencher Formulário Para Vendedor</h3>
+
+@if (Model.hasData)
+{
+    <p>Novo Vendedor Registado! Será Contactado Brevemente!</p>
+}
+
+<div class="container">
+    <form method="POST">
+        <label for="ramoAtividade">Insira o Ramo de Atividade da Empresa:</label><br>
+        <input type="text" id="ramoAtividade" name="ramoAtividade"><br>
+
+        <label for="morada">Insira a Morada da Empresa:</label><br>
+        <input type="text" id="morada" name="morada"><br>
+
+        <label for="contacto">Insira o Contacto da Empresa:</label><br>
+        <input type="text" id="contacto" name="contacto"><br>
+
+        <label for="nomeEmpresa">Insira o Nome da Empresa:</label><br>
+        <input type="text" id="nomeEmpresa" name="nomeEmpresa"><br>
+
+        <label for="nipc">Insira o NIPC da Empresa:</label><br>
+        <input type="text" id="nipc" name="nipc"><br>
+
+        <label for="codPostal">Insira o Código Postal da Empresa:</label><br>
+        <input type="text" id="codPostal" name="codPostal"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>

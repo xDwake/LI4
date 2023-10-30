@@ -1,0 +1,85 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EletroExpo
+build_property.RootNamespace = EletroExpo
+build_property.ProjectDir = C:\Users\GL702V\source\EletroExpo\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\GL702V\source\EletroExpo
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/GL702V/source/EletroExpo/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GL702V/source/EletroExpo/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GL702V/source/EletroExpo/Pages/ListaProdutos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdGFQcm9kdXRvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GL702V/source/EletroExpo/Pages/PageLoja.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUxvamEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GL702V/source/EletroExpo/Pages/PageOferta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZU9mZXJ0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GL702V/source/EletroExpo/Pages/PageProduto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZVByb2R1dG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GL702V/source/EletroExpo/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GL702V/source/EletroExpo/Pages/Registo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GL702V/source/EletroExpo/Pages/Shared/Formulario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXEZvcm11bGFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GL702V/source/EletroExpo/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GL702V/source/EletroExpo/Pages/Utilizadores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvcmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GL702V/source/EletroExpo/Pages/Utilizadores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvcmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GL702V/source/EletroExpo/Pages/Utilizadores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvcmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GL702V/source/EletroExpo/Pages/Utilizadores/PageProduto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvcmVzXFBhZ2VQcm9kdXRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GL702V/source/EletroExpo/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GL702V/source/EletroExpo/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GL702V/source/EletroExpo/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-6nhpnmhhwn

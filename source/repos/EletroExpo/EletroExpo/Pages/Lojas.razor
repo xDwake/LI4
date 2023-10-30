@@ -1,0 +1,37 @@
+﻿@page "/lojas"
+@using EletroExpo.Data
+
+<h3>Lojas</h3>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var field in lojas)
+        {
+            <tr>
+                <td>@field.nomeLoja</td>
+               
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    
+    public PseudoDB dbService { get;set;}
+
+    public List<Vendedor> lojas { get; set; }
+
+    protected override void OnInitialized()
+    {
+        dbService = new PseudoDB();
+        lojas = dbService.GetLojas();
+
+    }
+
+}

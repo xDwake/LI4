@@ -1,0 +1,77 @@
+﻿@page "/loja/{lojaPath}/Produtos/{idProduto}/Compra"
+@model EletroExpo.Pages.PageProdutoModel
+@{
+}
+
+<br>
+<h2>Processar Pagamento</h2>
+
+@if (Model.errorMessage.Length > 0)
+{
+    <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+        <strong>@Model.errorMessage</strong>
+        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+    </div>
+}
+else if ((Model.successMessage.Length > 0))
+{
+    <div class="row mb-3">
+        <div class="col-sm-9">
+            <div class='alert alert-success alert-dismissible fade show' role='alert'>
+                <strong>@Model.successMessage</strong>
+                <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+            </div>
+        </div>
+    </div>
+}
+<form method="POST">
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Nome do Titular</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="titular" value="@Model.dados.titular">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">País/Região</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="zona" value="@Model.dados.zona">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Cidade</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="cidade" value="@Model.dados.cidade">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Código Postal</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="codPostal" value="@Model.dados.codPostal">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Telefone</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="telefone" value="@Model.dados.telefone">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Nº Cartão</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="n_cartao" value="@Model.dados.n_cartao">
+        </div>
+    </div><div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Código de Segurança</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="codSeg" value="@Model.dados.codSeg">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+        <div class="col-sm-3 d-grid">
+            <a class="btn btn-outline-primary" href="/" role="button">Cancelar</a>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,36 @@
+﻿@page "/loja/{lojaPath}"
+@model EletroExpo.Pages.PageLojaModel
+@{
+}
+
+<br>
+<h3>@Model.NomeLoja</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome da Empresa</th>
+            <th>Morada da Empresa</th>
+            <th>Contacto</th>
+            <th>Ramo de Atividade</th>
+            <th>Código Postal</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.vendedor.nomeEmpresa</td>
+            <td>@Model.vendedor.morada</td>
+            <td>@Model.vendedor.contacto</td>
+            <td>@Model.vendedor.ramoAtividade</td>
+            <td>@Model.vendedor.codPostal</td>
+            <td><a class="btn btn-primary btn-sm" href="/loja/@Model.NomeLoja/Produtos">Lista de Produtos</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<form method="POST">
+    <div class="col-sm-3 d-grid">
+        <a class="btn btn-outline-primary" href="/" role="button">Cancelar</a>
+    </div>
+</form>

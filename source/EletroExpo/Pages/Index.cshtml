@@ -1,0 +1,33 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Página Principal";
+}
+
+<div class="text-center">
+    <h1 class="display-4">EletroExpo!</h1>
+    <p>A Maior Feira Digital de Tecnologia!</p>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <form class="example" action="action_page.php">
+        <input type="text" id="search-input" name="search-input" placeholder="Search..">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Vendedor</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var field in Model.nomeLojas)
+            {
+                <tr>
+                    <td>@field.nomeEmpresa</td>
+                    <td><a class="btn btn-primary btn-sm" href="/loja/@field.nomeEmpresa">Aceder</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

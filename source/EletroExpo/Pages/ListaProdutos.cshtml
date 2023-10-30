@@ -1,0 +1,45 @@
+﻿@page "/loja/{lojaPath}/Produtos"
+@model EletroExpo.Pages.ListaProdutosModel
+@{
+}
+
+<br>
+<h3>@Model.nomeLj</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Rating</th>
+            <th>Especificação</th>
+            <th>Categoria</th>
+            <th>Stock</th>
+            <th>Preço</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var prod in Model.listProdutos)
+        {
+            <tr>
+                <td>@prod.marca</td>
+                <td>@prod.modelo</td>
+                <td>@prod.rating</td>
+                <td>@prod.especificacao</td>
+                <td>@prod.categoria</td>
+                <td>@prod.stock</td>
+                <td>@prod.preco</td>
+                <td><a class="btn btn-primary btn-sm" href="/loja/@Model.nomeLj/Produtos/@prod.idProduto/Compra">Comprar</a></td>
+                <td><a class="btn btn-danger btn-sm" href="/loja/@Model.nomeLj/Produtos/@prod.idProduto/Oferta">Fazer Oferta</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<form method="POST">
+    <div class="col-sm-3 d-grid">
+        <a class="btn btn-outline-primary" href="/" role="button">Cancelar</a>
+    </div>
+</form>
